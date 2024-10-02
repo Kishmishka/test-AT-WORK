@@ -1,0 +1,38 @@
+.editPage {
+	&__container{
+		display: flex;
+		flex-direction: column;
+	}
+	&__content {
+		display: flex;
+		gap: 40px;
+	}
+}
+.backLink {
+	color: #595959;
+	display: flex;
+	gap:5px;
+}
+.backLink:hover {
+	color: #22A0BC;
+	display: flex;
+	gap:5px;
+}
+@media (max-width:925px) {
+	.editPage{
+		&__content {
+			flex-direction: column;
+		}
+	}
+}
+@media (max-width:375px) {
+	.userList{
+		margin-top: 20px;
+		&__items{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap:25px 75px;
+		}
+		}
+	}

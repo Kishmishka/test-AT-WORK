@@ -1,0 +1,59 @@
+.editSideBar {
+	padding: 40px 40px 0 40px;
+	background-color: #FDFDFD;
+	border-radius: 16px;
+	&__photo {
+		min-width: 280px;
+		min-height: 485px;
+		background-image: url("../../Img/userPhoto.jpg");
+		border-radius:8px;
+		background-size: cover;
+		background-position: center;
+		margin-bottom: 40px;
+	}
+
+	&__menu-item {
+		color: #9C9C9C;
+		font-weight: 600;
+		border-bottom: 1px solid #DADADA;
+		margin-bottom: 30px;
+		line-height: 21px;
+		padding-bottom: 12px;
+	}
+	&__menu-item:last-child {
+		
+		margin-bottom: 0px;
+	
+	}
+	.active {
+		color: #161616;
+	}
+}
+@media (max-width:1145px) {
+	.editSideBar{
+		&__menu-item:last-child {
+		
+			margin-bottom: 20px;
+		
+		}
+	}
+}
+@media (max-width:490px) {
+	.editSideBar{
+		padding: 28px 20px 0 20px;
+		&__photo{
+			margin-bottom:24px
+		}
+	}
+}
+@media (max-width:490px) {
+	.editSideBar{
+		&__photo{
+			min-height: auto;
+			min-height: 187px;
+		}
+		&__menu-item{
+			margin-bottom: 20px;
+		}
+	}
+}

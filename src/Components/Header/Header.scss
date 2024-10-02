@@ -1,0 +1,27 @@
+.header {
+	background-color: #FDFDFD;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 16px 0;
+	}
+	&__img{
+		height: 24px;
+	}
+	&__menu {
+		display: flex;
+		gap: 25px;
+	}
+	&__menu-buttons {
+		display: flex;
+		gap: 10px;
+	}
+}
+@media (max-width:375px) {
+	.header{
+		&__menu-buttons{
+			display: none;
+		}
+	}
+	}

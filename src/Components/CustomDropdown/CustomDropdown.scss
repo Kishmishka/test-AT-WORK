@@ -1,0 +1,39 @@
+.customDropdown {
+	&__items {
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.1s;
+		background-color: #FDFDFD;
+		position: absolute;
+		top: 5px;
+		right: 20px;
+		min-width: 200px;
+		border: 2px solid black;
+		border-radius: 12px;
+		padding: 8px;
+	}
+	&__items.active {
+		visibility: visible;
+		opacity: 1;
+	}
+	&__item {
+		display: block;
+		color: #161616;
+		cursor: pointer;
+		padding: 8px 0 8px 12px;
+		transition: 0.3s;
+	}
+	&__item:hover {
+		color: #22A0BC;
+	}
+}
+@media (max-width:375px) {
+.customDropdown{
+		&__items{
+			padding: 2px;
+			min-width: 143px;
+			top: 25px;
+			right: 0px
+		}
+	}
+}

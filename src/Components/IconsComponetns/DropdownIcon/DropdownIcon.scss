@@ -1,0 +1,11 @@
+.dropdownIcon{
+	transition: 0.3s;
+	fill: #161616;
+}
+.dropdownIcon.clicked{
+	fill: #595959;
+}
+.dropdownIcon:hover{
+	cursor: pointer;
+	fill: #22A0BC;
+}

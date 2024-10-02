@@ -1,0 +1,38 @@
+.editForm {
+width: 100%;
+background-color: #FDFDFD;
+border-radius: 16px;
+padding: 40px;
+	&__title {
+		font-weight: 600px;
+		font-size: 24px;
+		line-height: 33px;
+		padding-bottom: 16px;
+		border-bottom:1px solid #CDCDCD;
+		margin-bottom: 24px;
+	}
+	&__button{
+		margin-top: 8px;
+		display: inline-block;
+		font-weight: 600;
+		font-size: 16px;
+		color: #FDFDFD;
+		background-color: #161616;
+		padding: 12px 42px;
+		border-radius: 50px;
+		transition: 0.3s;
+	}
+	&__button:hover{
+		background-color: #F4F4F4;
+		color: #595959;
+		cursor: pointer;
+	}
+}
+@media (max-width:413px) {
+	.editForm{
+		&__button{
+			display: block;
+			text-align: center;
+		}
+	}
+}
