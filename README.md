@@ -10,4 +10,5 @@
 - Vite
 
 Скрип для запуска: `npm run dev`
-Ссылка на деплой: [https://test-at-work-peach.vercel.app/]
+
+[Ссылка на деплой](https://test-at-work-peach.vercel.app/)
