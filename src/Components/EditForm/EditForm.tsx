@@ -19,7 +19,7 @@ const EditForm = () => {
 	const [nameCompany, setNameCompany] = useState<string>(user?.company.name?? "");
 	const dispatch = useAppDispath()
 
-	const showWarning= () => toast("Заполните все поля!",
+	const showWarning= () => toast.error("Заполните все поля!",
 	{
 		position: "top-right",
 		autoClose: 5000,
@@ -28,7 +28,7 @@ const EditForm = () => {
 		pauseOnHover: true,
 		draggable: true,
 		progress: undefined,
-		theme: "dark",
+		theme: "light",
 	}
 	);
 
