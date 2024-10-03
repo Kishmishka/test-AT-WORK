@@ -66,7 +66,7 @@ const userSlice = createSlice({
 			}
 		},
 		editUserCard(state, action:PayloadAction<User>){
-			const editedUser = state.activeUsers.find(user=>user.id = action.payload.id)
+			const editedUser = state.activeUsers.find(user=>user.id === action.payload.id)
 			if(editedUser){
 				editedUser.address.city = action.payload.address.city;
 				editedUser.email = action.payload.email;
@@ -75,7 +75,6 @@ const userSlice = createSlice({
 				editedUser.phone = action.payload.phone;
 				editedUser.username = action.payload.username;
 				state.popupSuccesIsActive = true;
-				
 			}
 		},
 		deleteUserCard(state, action:PayloadAction<number>){
