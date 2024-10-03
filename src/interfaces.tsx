@@ -15,7 +15,6 @@ export interface IUserCardList{
 	title:string;
 }
 
-
 interface IGetUserApiResponse{
 	name:string;
 	username:string;

@@ -8,10 +8,9 @@ import { useAppSelector } from "../../Hooks/reduxHooks"
 import "./EditPage.scss"
 
 const EditPage = () => {
-	
 	const loading = useAppSelector(state=>state.users.loading)
 	useFetchUsers()
-	
+
 	return(
 		<div className="editPage">
 			<div className="container">

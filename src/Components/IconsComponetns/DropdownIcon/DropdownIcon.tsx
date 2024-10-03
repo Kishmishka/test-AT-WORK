@@ -8,7 +8,6 @@ interface DropdownIconProps{
 }
 
 const DropdownIcon:FC<DropdownIconProps> = ({width,onClick,clicked}) => {
-	
 	return(
 		<svg className={`dropdownIcon ${clicked ? "clicked": ""}`}
 				onClick={onClick}

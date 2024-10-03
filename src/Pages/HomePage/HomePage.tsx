@@ -1,6 +1,6 @@
-import UserList from "../Components/UserList/UserList"
-import useFetchUsers from "../Hooks/useFetchUsers"
-import { useAppSelector } from "../Hooks/reduxHooks"
+import UserList from "../../Components/UserList/UserList"
+import useFetchUsers from "../../Hooks/useFetchUsers"
+import { useAppSelector } from "../../Hooks/reduxHooks"
 
 const HomePage = () => {
 	useFetchUsers()
