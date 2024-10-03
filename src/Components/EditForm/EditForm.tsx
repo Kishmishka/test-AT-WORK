@@ -49,12 +49,12 @@ const EditForm = () => {
 	return(
 		<div className="editForm">
 			<div className="editForm__title">Данные профиля</div>
-			<CustomInput title="Имя" state={name} useState={setName}/>
-			<CustomInput title="Никнейм" state={username} useState={setUsername}/>
-			<CustomInput title="Почта" state={email} useState={setEmail}/>
-			<CustomInput title="Город" state={city} useState={setCity}/>
-			<CustomInput title="Телефон" state={phone} useState={setPhone}/>
-			<CustomInput title="Название компании" state={nameCompany} useState={setNameCompany}/>
+			<CustomInput title="Имя" state={name} onChange={setName}/>
+			<CustomInput title="Никнейм" state={username} onChange={setUsername}/>
+			<CustomInput title="Почта" state={email} onChange={setEmail}/>
+			<CustomInput title="Город" state={city} onChange={setCity}/>
+			<CustomInput title="Телефон" state={phone} onChange={setPhone}/>
+			<CustomInput title="Название компании" state={nameCompany} onChange={setNameCompany}/>
 			
 			<div onClick={()=>{
 				if(name && username && email && city && phone && nameCompany){
